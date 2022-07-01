@@ -1,0 +1,21 @@
+#server:
+#  port: 8808
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: baohanapi # 服务名
+  jackson: #返回json的全局时间格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+# 设置日志级别
+logging:
+  level:
+    root: debug
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #mybatis 日志 sql语句打印
+  mapper-locations: classpath:com/ahzx/baohanapi/mapper/xml/*.xml
+  #swagger地址：1 http://localhost:8808/swagger-ui.htm  2 http://localhost:8808/doc.html

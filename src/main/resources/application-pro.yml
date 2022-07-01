@@ -1,0 +1,14 @@
+server:
+  port: 8809
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_zx_guarantee?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&userSSL=false
+    username: root
+    password: root
+
+sign:
+  appId: y02xMJ1c
+  accessKeyId: taRGPE8dPuJT
+  keySecret: O3DvH6R7kv3Jamsrs5kk2L34zNqc6zyw
