@@ -96,6 +96,7 @@ public class GuaranteeController {
      */
     @PostMapping("letter_notificate")
     public R letterNotificate(@RequestBody GuaranteeVo guaranteeVo) {
+
         Guarantee guarantee = new Guarantee();
         BeanUtils.copyProperties(guaranteeVo, guarantee);
         String orderNo = guarantee.getOrderNo();
